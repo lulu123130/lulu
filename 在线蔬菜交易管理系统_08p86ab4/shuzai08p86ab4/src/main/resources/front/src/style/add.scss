@@ -1,0 +1,175 @@
+/* 公共的弹框 */
+.el-dialog.yy-dialog {
+  /* 宽度 */
+  --el-dialog-width: 80%;
+  padding: 0;
+  border-radius: 8px;
+  overflow: hidden;
+  margin-top: 100px;
+  max-width: 1150px;
+  min-width: 720px;
+
+  .el-dialog__header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    background-color: var(--btn-bg-color-);
+    padding: 0;
+
+  }
+
+  .el-dialog__title {
+    color: #fff;
+  }
+
+  .el-dialog__headerbtn {
+    .el-dialog__close {
+      color: #fff;
+    }
+
+    &:hover .el-dialog__close {
+      color: var(--btn-bg-hover-color-);
+    }
+  }
+
+  .el-dialog__body {
+    padding: var(--el-dialog-padding-primary);
+  }
+
+}
+
+/* 新增表单 */
+.editform {
+  background: none;
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+
+  .el-form-item {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: auto;
+
+    /* 富文本的el-form-item */
+    &:has(.ql) {
+      width: 100%;
+    }
+
+    /* 多行文本的el-form-item */
+    &:has(textarea) {
+      width: 100%;
+    }
+  }
+
+  .el-form-item__label {
+    width: 120px;
+  }
+
+  .el-form-item__content {
+    align-items: flex-start;
+  }
+
+  /* 边框颜色，实际是box-shadow替代了border */
+  .el-input,
+  .el-textarea {
+    --el-input-focus-border-color: var(--btn2-bg-color-);
+  }
+
+  .el-select {
+    --el-select-input-focus-border-color: var(--btn2-bg-color-);
+    --el-color-primary: var(--btn2-bg-color-);
+  }
+
+  .el-switch {
+    --el-switch-on-color: var(--btn2-bg-color-);
+  }
+
+  .el-input-number {
+    --el-color-primary: var(--btn2-bg-color-);
+  }
+
+  /* 图片 */
+  .el-upload-list--picture-card {
+    --el-upload-list-picture-card-size: 100px;
+  }
+
+  .el-upload--picture-card {
+    --el-upload-picture-card-size: 100px;
+  }
+
+  .btn-wrapper {
+    width: 100%;
+    display: flex;
+    padding-left: 60px;
+    gap: 20px;
+
+    .submit-btn {
+      border: 1px solid #E9E9E9;
+      color: var(--btn-font-color-);
+      background: var(--btn-bg-color-);
+      padding: 8px 40px;
+
+      &:hover {
+        color: var(--btn-font-hover-color-);
+        border: 1px solid var(--btn-bg-hover-color-);
+        background: var(--btn-bg-hover-color-);
+      }
+    }
+
+    .cancel-btn {
+      color: var(--btn2-font-color-);
+      background: var(--btn2-bg-color-);
+      padding: 8px 40px;
+
+      &:hover {
+        color: var(--btn2-font-hover-color-);
+        border: 1px solid var(--btn2-bg-hover-color-);
+        background: var(--btn2-bg-hover-color-);
+      }
+    }
+  }
+
+  /* 人脸识别 */
+  .face-form-item {
+    display: flex;
+
+    img {
+      width: 102px;
+      height: 102px;
+      overflow: hidden;
+      border-radius: 8px;
+      position: relative;
+      display: inline-block;
+      border: 1px solid #d9d9d9;
+    }
+  }
+}
+
+
+/* 表格的图片 */
+.table-image {
+  height: 32px;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+/* 表格的操作按钮 */
+.table-button-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+
+  .el-button+.el-button {
+    margin-left: 0;
+  }
+}
+
+.messages-view .item {
+  border-bottom: 1px dashed #aba7a7;
+}

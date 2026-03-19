@@ -1,0 +1,28 @@
+/* 1. 页面容器 */
+.detail-page {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px 0;
+
+  .left-right {
+    display: flex;
+    padding-top: 20px;
+    gap: 30px;
+  }
+
+  .detail-left {
+    flex: auto;
+    width: 0;
+  }
+
+  .detail-right {
+    flex: none;
+    width: 330px;
+  }
+
+}
+
+.detail-text .text {
+    word-break: break-all;
+}

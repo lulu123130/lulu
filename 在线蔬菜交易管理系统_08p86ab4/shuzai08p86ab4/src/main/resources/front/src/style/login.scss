@@ -1,0 +1,161 @@
+/* 定义全局主题变量 */
+:root {
+
+  /* 主色 */
+  --btn-bg-color-: #669934;
+  --btn-bg-hover-color-: #477321;
+  --btn-font-color-: #FFF;
+  --btn-font-hover-color-: #FFF;
+
+  /* 副色 */
+  --btn2-bg-color-: #13c2c2;
+  --btn2-bg-hover-color-: #08979c;
+  --btn2-font-color-: #FFF;
+  --btn2-font-hover-color-: #FFF;
+
+}
+
+.login {
+  background: url(http://codegen.caihongy.cn/20250926/74e025d9ac324516aa7b6808cd5da860.jpg) no-repeat center / 100% 100%;
+  display: flex;
+  width: 100%;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+
+  /* 自定义输入框高度 */
+  --ab-input-height-: 36px;
+
+  /* 表单盒子 */
+  .loginform {
+    padding: 54px;
+    margin: 0;
+    overflow: hidden;
+    width: 528px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 10px 0px rgba(102, 153, 52, 0.5);
+    border-radius: 30px 30px 30px 30px;
+  }
+
+  /* 媒体查询 */
+  @media screen and (max-width: 768px) {
+    .loginform {
+      width: 100%;
+    }
+  }
+
+  /* 表单盒子：二级 */
+  .loginform-wrapper {
+    padding: 0;
+    width: 100%;
+    height: auto;
+  }
+
+  /* 表单项 */
+  .el-form-item {
+    border-radius: 10px;
+    padding: 0 20px;
+    margin: 0 auto 30px auto;
+    width: 100%;
+    max-width: 650px;
+    height: auto;
+    flex-direction: column;
+  }
+
+  /* 标签 */
+  .el-form-item__label {
+    color: #000000;
+    justify-content: flex-start;
+  }
+
+  /* 提示语 */
+  .el-select__placeholder,
+  .el-input__inner::placeholder {
+    color: #9E9E9E;
+  }
+
+  /* 文本框 */
+  .el-input {
+    --el-input-height: var(--ab-input-height-);
+    --el-input-border-radius: 0;
+    font-size: 14px;
+  }
+
+  .el-input__wrapper {
+    box-shadow: none;
+    border-bottom: 1px solid #D6D6D6;
+  }
+
+  /* 下拉 */
+  .el-select__wrapper {
+    --el-border-radius-base: 0;
+    line-height: var(--ab-input-height-);
+    height: var(--ab-input-height-);
+    box-shadow: none;
+    border-bottom: 1px solid #D6D6D6;
+  }
+
+  /* 验证码 */
+  .code {
+    .el-form-item__content {
+      flex-wrap: nowrap;
+    }
+
+    .code-box {
+      height: var(--ab-input-height-);
+      cursor: pointer;
+      margin: 0 0 0 10px;
+      display: flex;
+      border-radius: 6px;
+      flex: 0 0 auto;
+      background: var(--btn-bg-color-);
+      width: 120px;
+      justify-content: center;
+      align-items: center;
+      user-select: none;
+      gap: 4px;
+    }
+
+  }
+
+  .f-f-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+
+  .el-link {
+    --el-link-hover-text-color: var(--btn-bg-color-);
+  }
+
+  /* 人脸按钮 */
+  .face-btn {}
+
+  /* 忘记密码 */
+  .forget-btn {}
+
+
+  /* 注册按钮盒子 */
+  .register-box {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 30px;
+    width: 100%;
+    justify-content: center;
+    height: auto;
+
+    .el-button {
+      --el-button-hover-bg-color: var(--btn-bg-color-);
+      --el-button-hover-border-color: var(--btn-bg-color-);
+      --el-button-hover-text-color: #fff;
+    }
+  }
+
+  /* 登录按钮 */
+  .login-btn {}
+
+
+}
